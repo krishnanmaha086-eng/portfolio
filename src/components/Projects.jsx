@@ -39,7 +39,11 @@ function Projects() {
     const visibleProjects = showAll ? projects : projects.slice(0, 4);
 
     return (
-        <section id="projects" className="max-w-7xl mx-auto px-10 py-16">
+        <section
+            id="projects"
+            className="max-w-7xl mx-auto px-10 py-16"
+        >
+            {/* Heading */}
             <div className="flex justify-between items-center mb-10">
                 <h2 className="text-3xl font-bold text-blue-400">
                     PROJECTS
@@ -53,13 +57,12 @@ function Projects() {
                 </button>
             </div>
 
+            {/* Cards */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {visibleProjects.map((project, index) => (
                     <a
                         key={index}
                         href={project.link}
-                        target="_blank"
-                        rel="noreferrer"
                         className="bg-slate-900/70 border border-slate-800 rounded-3xl overflow-hidden hover:border-blue-500/50 hover:-translate-y-2 transition duration-300 block cursor-pointer"
                     >
                         <img

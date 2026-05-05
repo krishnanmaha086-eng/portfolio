@@ -28,7 +28,11 @@ function Education() {
             <div className="grid lg:grid-cols-2 gap-6">
 
                 {/* Education */}
-                <div className="bg-slate-900/70 border border-slate-800 rounded-3xl p-8 hover:border-blue-500/50 transition">
+                {/* Education */}
+                <a
+                    href="https://www.velhightech.com/"
+                    className="bg-slate-900/70 border border-slate-800 rounded-3xl p-8 hover:border-blue-500/50 hover:-translate-y-1 transition block cursor-pointer"
+                >
                     <h2 className="text-2xl font-bold text-blue-400 mb-8">
                         EDUCATION
                     </h2>
@@ -63,8 +67,7 @@ function Education() {
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </a>
                 {/* Certifications */}
                 <div className="bg-slate-900/70 border border-slate-800 rounded-3xl p-8 hover:border-blue-500/50 transition">
                     <h2 className="text-2xl font-bold text-blue-400 mb-8">
@@ -76,8 +79,6 @@ function Education() {
                             <a
                                 key={index}
                                 href={cert.link}
-                                target="_blank"
-                                rel="noreferrer"
                                 className="hover:-translate-y-2 transition duration-300 cursor-pointer block"
                             >
                                 <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-white p-2 flex items-center justify-center overflow-hidden shadow-lg">
